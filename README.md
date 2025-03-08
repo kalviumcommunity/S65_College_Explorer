@@ -4,10 +4,15 @@ College Explorer is a web application built using the MERN stack that allows use
 
 ## 🚀 Features
 ✅ Search Colleges – Find colleges based on state and city.
+
 ✅ College Details – View essential information about each college.
+
 ✅ Admin Portal – Secure admin dashboard for managing colleges.
+
 ✅ CRUD Operations – Admins can add, edit, update, and delete college details.
+
 ✅ Authentication & Authorization – Secure access control for users and admins.
+
 ✅ Responsive UI – Fully optimized for web and mobile users.
 
 ## 🏗️ Tech Stack
