@@ -83,7 +83,7 @@ const EditCollege = () => {
   useEffect(() => {
     const fetchCollegeData = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/college/${id}`, {
+        const response = await fetch(`https://s65-college-explorer.onrender.com/college/${id}`, {
           credentials: 'include'
         });
         
@@ -223,7 +223,7 @@ const EditCollege = () => {
         formDataToSend.append('images', image);
       });
 
-      const response = await fetch(`http://localhost:8080/college/${id}`, {
+      const response = await fetch(`https://s65-college-explorer.onrender.com0/college/${id}`, {
         method: 'PUT',
         credentials: 'include',
         body: formDataToSend,

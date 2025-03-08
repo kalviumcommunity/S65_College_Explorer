@@ -27,7 +27,7 @@ const Home = () => {
       if (params.state) queryParams.append('state', params.state);
       if (params.city) queryParams.append('city', params.city);
       
-      const response = await fetch(`http://localhost:8080/college?${queryParams.toString()}`);
+      const response = await fetch(`https://s65-college-explorer.onrender.com/college?${queryParams.toString()}`);
       
       if (!response.ok) {
         throw new Error(`Error ${response.status}: ${response.statusText}`);
@@ -48,7 +48,7 @@ const Home = () => {
     try {
       // We could add a specific endpoint for featured colleges in the backend
       // For now, we'll just fetch all and sort by rating
-      const response = await fetch('http://localhost:8080/college');
+      const response = await fetch('https://s65-college-explorer.onrender.com/college');
       
       if (!response.ok) {
         throw new Error(`Error ${response.status}: ${response.statusText}`);

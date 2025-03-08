@@ -11,7 +11,7 @@ const CollegeDetail = () => {
   useEffect(() => {
     const fetchCollegeDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/college/${id}`);
+        const response = await fetch(`https://s65-college-explorer.onrender.com/college/${id}`);
         
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);

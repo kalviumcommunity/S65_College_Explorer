@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const checkLoggedInStatus = async () => {
       try {
-        const response = await fetch('http://localhost:8080/auth/check-auth', {
+        const response = await fetch('https://s65-college-explorer.onrender.com/auth/check-auth', {
           credentials: 'include'
         });
         
@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (email, password) => {
-    const response = await fetch('http://localhost:8080/auth/login-admin', {
+    const response = await fetch('https://s65-college-explorer.onrender.com/auth/login-admin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
       throw new Error(errorData.message || 'Login failed');
     }
 
-    const userResponse = await fetch('http://localhost:8080/auth/check-auth', {
+    const userResponse = await fetch('https://s65-college-explorer.onrender.com/auth/check-auth', {
       credentials: 'include'
     });
 
@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await fetch('http://localhost:8080/auth/logout', {
+      await fetch('https://s65-college-explorer.onrender.com/auth/logout', {
         method: 'POST',
         credentials: 'include',
       });
@@ -70,7 +70,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const register = async (name, email, password) => {
-    const response = await fetch('http://localhost:8080/auth/register-admin', {
+    const response = await fetch('https://s65-college-explorer.onrender.com/auth/register-admin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

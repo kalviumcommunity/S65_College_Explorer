@@ -12,7 +12,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchColleges = async () => {
       try {
-        const response = await fetch('http://localhost:8080/college', {
+        const response = await fetch('https://s65-college-explorer.onrender.com/college', {
           credentials: 'include'
         });
         
@@ -46,7 +46,7 @@ const AdminDashboard = () => {
     if (!window.confirm('Are you sure you want to delete this college?')) return;
     
     try {
-      const response = await fetch(`http://localhost:8080/college/${id}`, {
+      const response = await fetch(`https://s65-college-explorer.onrender.com/college/${id}`, {
         method: 'DELETE',
         credentials: 'include'
       });

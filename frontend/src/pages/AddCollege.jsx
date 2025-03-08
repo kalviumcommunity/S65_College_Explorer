@@ -163,7 +163,7 @@ const AddCollege = () => {
         formDataToSend.append('images', image);
       });
 
-      const response = await fetch('http://localhost:8080/college', {
+      const response = await fetch('https://s65-college-explorer.onrender.com/college', {
         method: 'POST',
         credentials: 'include',
         body: formDataToSend,
