@@ -9,7 +9,6 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret  
 GEMINI_API_KEY=your_gemini_api_key  
 GOOGLE_CSE_ID=
-GOOGLE_API_KEY=AIzaSyDtMjxCV3mZC6bhJO3AKDOL6TZHRmFOg48 
 
 
 
