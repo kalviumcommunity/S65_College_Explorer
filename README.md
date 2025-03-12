@@ -1,3 +1,5 @@
+## frontend deploy Link : https://s65-college-explorer.vercel.app/
+
 # 🎓 College Explorer
 📌 Project Overview
 College Explorer is a web application built using the MERN stack that allows users to search for colleges based on state and city. The platform includes an Admin Portal, where administrators can perform CRUD operations to manage college details, ensuring accurate and up-to-date information.
